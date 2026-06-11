@@ -4,7 +4,7 @@ This is an end-to-end marketing analytics project that integrates ad spend, web 
 ## Dataset Summary
 This project uses a synthetic marketing dataset composed of three integrated data sources that capture the complete customer acquisition journey—from advertising exposure to final conversion.
 
-### 1. Ad Spend Dataset
+ ## 1. Ad Spend Dataset:
 Contains advertising performance and cost data from multiple marketing channels such as Google Ads, Meta, TikTok, and LinkedIn.
 
 Key fields:
@@ -71,6 +71,27 @@ The dataset spans from January 1, 2025, to June 30, 2025, representing 181 conse
 - `Interactive dashboard with drill-down capabilities`:
 - `Automated data integration from ad spend, web analytics, and CRM datasets`:
 - `Executive-level KPI reporting for marketing decision-making`:
+## Methodology
+
+1. Data Collection
+2. Data Cleaning
+3. Customer Journey Reconstruction
+4. Attribution Modeling
+   - First Touch
+   - Last Touch
+   - Linear Attribution
+5. ROAS Calculation
+6. CAC Analysis
+7. Dashboard Development
+
+## Key Metrics
+
+- Return on Ad Spend (ROAS)
+- Customer Acquisition Cost (CAC)
+- Conversion Rate
+- Funnel Drop-off Rate
+- Revenue by Channel
+- Attributed Conversions
 ## Configuration
 
 ### Prerequisites
@@ -79,3 +100,25 @@ The dataset spans from January 1, 2025, to June 30, 2025, representing 181 conse
 - SQL Server / PostgreSQL
 - Power BI Desktop 
 - Jupyter Notebook
+## Project Structure
+
+├── data/
+│   ├── raw/                  # Original source datasets
+│   └── processed/            # Cleaned and transformed datasets
+│
+├── sql/
+│   ├── data_cleaning.sql
+│   ├── attribution_model.sql
+│   └── roas_cac_analysis.sql
+│
+├── notebooks/
+│   └── exploratory_analysis.ipynb
+│
+├── dashboard/
+│   └── Marketing_Attribution.pbix
+│
+├── assets/
+│   └── screenshots/
+│
+├── README.md
+└── requirements.txt
