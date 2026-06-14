@@ -106,19 +106,19 @@ The dataset spans from January 1, 2025, to June 30, 2025, representing 181 conse
 │   ├── raw/                  # Original source datasets
 │   └── processed/            # Cleaned and transformed datasets
 │
-├── sql/
-│   ├── data_cleaning.sql
-│   ├── attribution_model.sql
-│   └── roas_cac_analysis.sql
+├── notebook/
+|    └── exploratory_analysis.ipynb
+|
+├── 
+│   └── 
+|   ├── 
+│   └── 
+|
+├── 
+│   └── 
 │
-├── notebooks/
-│   └── exploratory_analysis.ipynb
-│
-├── dashboard/
-│   └── Marketing_Attribution.pbix
-│
-├── assets/
-│   └── screenshots/
+├── 
+│   └── 
 │
 ├── README.md
 └── requirements.txt
