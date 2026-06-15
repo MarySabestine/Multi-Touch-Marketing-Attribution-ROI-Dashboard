@@ -1,3 +1,4 @@
+# Multi-Touch Marketing Attribution & ROI Dashboard
 ### Project Description
 
 This project implements an analytical engine to evaluate multi-channel marketing campaigns. In the modern customer journey, interactions are fragmented across various paid and organic platforms. Standard evaluation methods heavily overemphasize the final interactions, completely ignoring prior touchpoints that initially built brand awareness or nurtured consideration. This discrepancy leads to inefficient budget allocation and inaccurate performance metrics.
