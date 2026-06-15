@@ -24,3 +24,4 @@ The database structure relies on a centralized point of truth designed for rapid
 1. **Ingestion & Optimization Framework:** Automated Python scripts executing heavy structural cleanups, standardizations, and data enrichment steps.
 2. **Attribution Core Logic:** Relational database operations utilizing advanced sequencing and analytical windows to structure behavioral paths.
 3. **Executive Visualization Layout:** Interactive analytical workspaces featuring cohort conversions, return scatter distributions, and campaign efficiency matrices.
+
