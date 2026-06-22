@@ -1,29 +1,78 @@
-# Multi-Touch Marketing Attribution & ROI Dashboard
-### Project Description
+# 📊 Multi-Touch Marketing Attribution & ROI Dashboard
 
-This project implements an analytical engine to evaluate multi-channel marketing campaigns. In the modern customer journey, interactions are fragmented across various paid and organic platforms. Standard evaluation methods heavily overemphasize the final interactions, completely ignoring prior touchpoints that initially built brand awareness or nurtured consideration. This discrepancy leads to inefficient budget allocation and inaccurate performance metrics.
+## Overview
 
-The core of this system addresses this problem by calculating **Multi-Touch Marketing Attribution models**. It centralizes clickstream traffic, conversion events, and financial data into a cohesive analytical model. By distributing fractional credit across all touchpoints in a customer's journey, the system accurately calculates key indicators such as **Return on Ad Spend (ROAS)** and **Customer Acquisition Cost (CAC)**. 
+Companies advertise across multiple channels — Google Ads, Meta, TikTok, LinkedIn — but customer journeys are rarely simple. A customer might see a Facebook ad, read a blog post, and finally convert through a Google search ad. Most businesses still give 100% of the credit to that last click, which paints an inaccurate picture of what's actually driving results.
 
-### Core Features
+This project builds a **Multi-Touch Attribution dashboard** that fairly distributes credit across every touchpoint in a customer's journey, instead of just the final one. It helps marketing teams understand which channels truly drive value, so they can spend their budget more effectively.
 
-* **Algorithmic Revenue Allocation:** Features processing pipelines that dynamically distribute conversion values across historical customer touchpoints using First-Touch, Last-Touch, and Linear models.
-* **Data Consolidation & Cleansing:** Integrates high-volume web event logs, granular advertising spend data, and bottom-of-funnel conversion milestones. The pipeline resolves common structural issues such as fragmented web session tracking, timezone variances, and irregular tracking strings.
-* **Segmented Performance Insights:** Facilitates deep multi-dimensional analysis by linking core financial returns back to distinct business characteristics such as industry verticals, company scales, and user tier designations.
+---
 
-### Data Model Architecture
+## Problem Statement
 
-The database structure relies on a centralized point of truth designed for rapid aggregation and clean reporting relationships:
+- Last-click attribution overvalues the final touchpoint and ignores everything that led up to it.
+- This causes budget to be pulled away from channels that are actually working (just not at the very end of the journey).
+- Businesses need a clearer, fairer way to measure channel performance.
 
-* **`fact_marketing_attribution`:** Tracks every distinct engagement action an individual completes. Rather than inflating conversion numbers, it houses a specialized, calculated field storing the proportional revenue earned by that specific event.
-* **`dim_customer`:** Contains descriptive client parameters, serving as the source for demographic segmentation.
-* **`dim_campaign`:** Catalogs advertising channels, asset group identifiers, and total costs over time.
-* **`dim_date`:** Provides a continuous temporal baseline allowing standardizations for cohort tracking and trend analysis.
+---
 
-### Repository Deliverables
+## What This Project Does
 
-1. **Ingestion & Optimization Framework:** Automated Python scripts executing heavy structural cleanups, standardizations, and data enrichment steps.
-2. **Attribution Core Logic:** Relational database operations utilizing advanced sequencing and analytical windows to structure behavioral paths.
-3. **Executive Visualization Layout:** Interactive analytical workspaces featuring cohort conversions, return scatter distributions, and campaign efficiency matrices.
+- Combines website traffic data, ad spend data, and conversion/sales data into one clean dataset.
+- Calculates **Return on Ad Spend (ROAS)** and **Customer Acquisition Cost (CAC)** for each channel.
+- Applies three attribution models so users can compare results:
+  - **First-Touch** – credit goes to the first interaction
+  - **Last-Touch** – credit goes to the final interaction
+  - **Linear** – credit is spread evenly across all interactions
+- Presents everything in an interactive Power BI / Tableau dashboard.
 
-This is Tesing line by anil
+---
+
+## Who This Helps
+
+| Role | What They Get From It |
+|---|---|
+| **Marketing Leadership** | A clear, high-level view of which channels are actually worth the spend |
+| **Marketing Analysts** | The ability to drill into specific campaigns and see early vs. late funnel impact |
+
+---
+
+## Project Steps
+
+1. **Data Cleaning** – Cleaned and standardized raw marketing data (timestamps, missing values, duplicate records).
+2. **Attribution Modeling** – Built logic to calculate First-Touch, Last-Touch, and Linear attribution for each customer journey.
+3. **Metrics Calculation** – Calculated key business metrics like CAC and ROAS for each channel.
+4. **Dashboard Build** – Designed an interactive dashboard so results can be explored visually and compared across models.
+
+---
+
+## Tools Used
+
+- **Python (Pandas)** – data cleaning and preparation
+- **SQL** – data modeling and calculations
+- **Power BI / Tableau** – final dashboard and visualization
+
+---
+
+## Dashboard Preview
+
+> _Add your dashboard screenshot here:_
+> `![Dashboard Preview](assets/dashboard_preview.png)`
+
+---
+
+## Key Takeaways
+
+> _Add 2–3 real findings once the dashboard is complete, for example:_
+> - Channel X looked underperforming under last-click attribution, but was actually responsible for a large share of early customer awareness.
+> - Switching to a linear model changed the calculated CAC by X%, showing the true cost of acquisition was higher than originally thought.
+
+---
+
+## Author
+
+**Anil Kumar Pyarasani**
+Computer Science Graduate | Aspiring Data Analyst / BI Developer
+
+- GitHub: [github.com/Anilqumr](https://github.com/Anilqumr)
+- LinkedIn: [linkedin.com/in/pyarasani-anil-kumar](https://linkedin.com/in/pyarasani-anil-kumar)
