@@ -130,20 +130,19 @@ The dataset spans from January 1, 2025, to June 30, 2025, representing 181 conse
 
 ├── data/
 │   ├── raw/                  # Original source datasets
-│   └── processed/            # Cleaned and transformed datasets
-│
-├── notebook/
-|    └── exploratory_analysis.ipynb
-|
-├── 
-│   └── 
+│   └── cleaned/            # Cleaned and transformed datasets
+│──images   
+├── notebooks/
+|    ├── Data_cleaning.ipynb    
+|    └──   exploratory_analysis.ipynb
+├── reports
+│── SQL         
 |   ├── 
 │   └── 
 |
-├── 
+├──
 │   └── 
 │
-├── 
 │   └── 
 │
 ├── README.md
