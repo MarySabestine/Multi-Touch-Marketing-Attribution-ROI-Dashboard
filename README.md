@@ -73,4 +73,3 @@ Computer Science Graduate | Aspiring Data Analyst / BI Developer
 - LinkedIn: [linkedin.com/in/pyarasani-anil-kumar](https://linkedin.com/in/pyarasani-anil-kumar)
 
 
-This is a test
