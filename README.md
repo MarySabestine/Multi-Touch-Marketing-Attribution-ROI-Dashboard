@@ -1,28 +1,76 @@
-# Multi-Touch Marketing Attribution & ROI Dashboard
-### Project Description
+# 📊 Multi-Touch Marketing Attribution & ROI Dashboard
 
-This project implements an analytical engine to evaluate multi-channel marketing campaigns. In the modern customer journey, interactions are fragmented across various paid and organic platforms. Standard evaluation methods heavily overemphasize the final interactions, completely ignoring prior touchpoints that initially built brand awareness or nurtured consideration. This discrepancy leads to inefficient budget allocation and inaccurate performance metrics.
+## Project Status: Work in Progress
 
-The core of this system addresses this problem by calculating **Multi-Touch Marketing Attribution models**. It centralizes clickstream traffic, conversion events, and financial data into a cohesive analytical model. By distributing fractional credit across all touchpoints in a customer's journey, the system accurately calculates key indicators such as **Return on Ad Spend (ROAS)** and **Customer Acquisition Cost (CAC)**. 
+This project is still being built. Right now, it covers the **data cleaning stage** for the conversions (sales) data. The attribution modeling, ROAS/CAC calculations, and the final dashboard are planned next steps — not built yet. This README reflects exactly what's in the repo today, and will be updated as the project grows.
 
-### Core Features
+---
 
-* **Algorithmic Revenue Allocation:** Features processing pipelines that dynamically distribute conversion values across historical customer touchpoints using First-Touch, Last-Touch, and Linear models.
-* **Data Consolidation & Cleansing:** Integrates high-volume web event logs, granular advertising spend data, and bottom-of-funnel conversion milestones. The pipeline resolves common structural issues such as fragmented web session tracking, timezone variances, and irregular tracking strings.
-* **Segmented Performance Insights:** Facilitates deep multi-dimensional analysis by linking core financial returns back to distinct business characteristics such as industry verticals, company scales, and user tier designations.
+## What This Project Will Eventually Do
 
-### Data Model Architecture
+The end goal is a **Multi-Touch Attribution dashboard**. Companies advertise across multiple channels — Google Ads, Meta, TikTok, LinkedIn — but customers rarely convert after seeing just one ad. Most businesses still give 100% of the credit for a sale to the very last ad someone clicked, which gives a misleading picture of what's actually working.
 
-The database structure relies on a centralized point of truth designed for rapid aggregation and clean reporting relationships:
+This project aims to fix that by fairly splitting credit across every touchpoint in a customer's journey, so marketing teams can see which channels truly deserve more (or less) budget.
 
-* **`fact_marketing_attribution`:** Tracks every distinct engagement action an individual completes. Rather than inflating conversion numbers, it houses a specialized, calculated field storing the proportional revenue earned by that specific event.
-* **`dim_customer`:** Contains descriptive client parameters, serving as the source for demographic segmentation.
-* **`dim_campaign`:** Catalogs advertising channels, asset group identifiers, and total costs over time.
-* **`dim_date`:** Provides a continuous temporal baseline allowing standardizations for cohort tracking and trend analysis.
+---
 
-### Repository Deliverables
+## What's Actually in the Repo Right Now
 
-1. **Ingestion & Optimization Framework:** Automated Python scripts executing heavy structural cleanups, standardizations, and data enrichment steps.
-2. **Attribution Core Logic:** Relational database operations utilizing advanced sequencing and analytical windows to structure behavioral paths.
-3. **Executive Visualization Layout:** Interactive analytical workspaces featuring cohort conversions, return scatter distributions, and campaign efficiency matrices.
+### 1. Raw Data
+- `conversions.csv.xls` — the starting dataset. Despite the `.xls` name, it's a plain CSV file with three columns: `user_id`, `conversion_date` (with a timestamp), and `revenue`. It contains 1,564 conversion records.
 
+### 2. Data Cleaning (Python / Jupyter Notebook)
+`Transforming-Conversions.ipynb` does the following:
+- Loads the raw CSV with Pandas.
+- Inspects the data using `.head()`, `.sample()`, `.info()`, and `.describe()` to understand its shape, column types, and basic statistics.
+- Converts the `conversion_date` column from plain text into a proper datetime format, then strips out the time portion so each date is clean and consistent (this also makes the data easier to work with later in Power BI).
+- Checks for duplicate rows and missing values (none were found).
+- Plots a boxplot of the `revenue` column to visually check for outliers.
+- Saves the cleaned result as `cleaned_conversions.csv`.
+
+### 3. Cleaned Data
+- `cleaned_conversions.csv` — the output of the notebook above. Same three columns, with the date field cleaned up.
+
+### 4. SQL Setup
+- `Anilsql1.sql` — creates a `conversions` table with the same three columns (`user_id`, `conversion_date`, `revenue`).
+- `Anilsql2.sql` — basic exploration queries: `SELECT * FROM conversions` and `DESCRIBE conversions`, used to confirm the table and its data types.
+
+---
+
+## What's Missing (a.k.a. What's Next)
+
+This is the honest part: a lot of the project still needs to be built. Here's what's planned:
+
+- [ ] **Ad spend / channel data** — bringing in data for each marketing channel (Google Ads, Meta, TikTok, LinkedIn, etc.) so spend can be compared against results.
+- [ ] **Touchpoint / customer journey data** — right now there's only one row per conversion. To do proper attribution, each customer's full sequence of interactions (ad seen → blog visited → search click → purchase) needs to be tracked.
+- [ ] **Attribution modeling** — building the actual logic for First-Touch, Last-Touch, and Linear attribution models.
+- [ ] **ROAS and CAC calculations** — once spend and channel data are in place, calculate Return on Ad Spend and Customer Acquisition Cost per channel.
+- [ ] **Dashboard** — building the final interactive Power BI / Tableau dashboard to visualize and compare everything.
+
+---
+
+## Tools Used So Far
+
+- **Python (Pandas, NumPy, Matplotlib)** — for loading, inspecting, and cleaning the data, and plotting a quick boxplot.
+- **SQL** — for setting up a basic table structure and exploring the data.
+
+*(Power BI / Tableau will be added once there's enough data to build a meaningful dashboard.)*
+
+---
+
+## Why I'm Sharing This Now (Even Though It's Incomplete)
+
+I'd rather show real, in-progress work than wait until everything is "perfect." This README will get updated step by step as I add channel data, build the attribution logic, and put together the dashboard — so you can actually see the project develop, not just the finished result.
+
+---
+
+## Author
+
+**Anil Kumar Pyarasani**
+Computer Science Graduate | Aspiring Data Analyst / BI Developer
+
+- GitHub: [github.com/Anilqumr](https://github.com/Anilqumr)
+- LinkedIn: [linkedin.com/in/pyarasani-anil-kumar](https://linkedin.com/in/pyarasani-anil-kumar)
+
+
+This is test 3
