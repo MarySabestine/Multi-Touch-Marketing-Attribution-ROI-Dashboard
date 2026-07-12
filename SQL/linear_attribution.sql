@@ -1,57 +1,19 @@
 --Count touches.
 SELECT
-
-user_id,
-
-channel,
-
-COUNT(*) OVER(
-
+    user_id,
+    channel,
+    COUNT(*) OVER(
 PARTITION BY user_id
-
 ) AS touches,
-
-revenue,
-
-revenue*1.0/
-
-COUNT(*) OVER(
-
+    revenue,
+    revenue*1.0/
+    COUNT(*) OVER(
 PARTITION BY user_id
-
 ) AS credit
-
 FROM customer_journey;
 
 
---Aggregate
-WITH linear AS (
 
-SELECT
-
-channel,
-
-revenue*1.0/
-
-COUNT(*) OVER(
-
-PARTITION BY user_id
-
-) AS credit
-
-FROM customer_journey
-
-)
-
-SELECT
-
-channel,
-
-SUM(credit)
-
-FROM linear
-
-GROUP BY channel;
 
 
 --First Touch View
@@ -155,3 +117,4 @@ FROM customer_journey;
 SELECT
 SUM(credit)
 FROM linear;
+

@@ -32,3 +32,4 @@ ON cuw.user_id = ct.user_id
 
 WHERE cuw.timestamp <= ct.conversion_date;
 
+SELECT * FROM customer_journey;
