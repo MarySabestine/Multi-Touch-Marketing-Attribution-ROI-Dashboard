@@ -1,3 +1,5 @@
+-- Used CTE, Window Functions, Joins for creating a table with user Journey.
+
 WITH customer_journey AS
 (
     SELECT
@@ -13,6 +15,9 @@ WITH customer_journey AS
     LEFT JOIN conversions conv
            ON tp.user_id = conv.user_id
 )
+
+
+-- Used this Select Statement to display Customer Journey Order partitioned by each user id.
 
 SELECT *,
        ROW_NUMBER() OVER(

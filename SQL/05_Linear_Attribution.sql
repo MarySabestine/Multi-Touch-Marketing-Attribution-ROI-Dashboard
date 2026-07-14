@@ -1,3 +1,11 @@
+-- This SQL Script uses CTE and Joins to display Linear Attribution.
+
+-- Linear Attribution: Linear Attribution is a multi-touch attribution model that distributes conversion 
+-- credit equally across all touchpoints in the customer journey.
+-- Rather than isolating the first or last interaction,
+-- this model operates on the assumption that every digital touchpoint contributed equally 
+-- to the ultimate conversion.
+
 WITH attribution_base AS
 (
     SELECT

@@ -1,3 +1,5 @@
+--  This Sql Query uses CTE, Joins to display Return on Ad Spend(ROAS).
+
 WITH total_spend AS
 (
     SELECT

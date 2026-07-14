@@ -1,3 +1,5 @@
+--  This Sql Query uses CTE, Joins to display First Click Attribution.
+
 WITH attribution_base AS
 (
     SELECT

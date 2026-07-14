@@ -1,3 +1,5 @@
+--  This Sql Query uses CTE, Joins to Create and display Last Click Attribution Table.
+
 CREATE TABLE fact_last_click_attribution AS
 
 WITH RankedTouchpoints AS
