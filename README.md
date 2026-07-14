@@ -86,7 +86,7 @@ Under Last-Click attribution, **Google gets 100% of the credit** and Facebook ge
 
 > ⚠️ A ROAS of 0.66 means that for every $1.00 spent on advertising, only $0.66 in revenue is returned. All campaigns are currently loss-making, making optimization an urgent business priority.
 
-![KPIs](assets/KPI_s.png)
+![KPIs](Images/KPI's.png)
 
 ---
 
@@ -103,7 +103,7 @@ The funnel tracks users from their first website visit through to a completed pu
 
 **Key Finding:** The funnel is nearly lossless through the top three stages — almost every visitor views a product and signs up. However, there is an **80.4% drop-off at the final conversion stage** (Signup → Purchase). This is where the business is losing customers, and it points to a checkout, pricing, or trust issue rather than a traffic or awareness problem.
 
-![Conversion Funnel](assets/Conversion_Funnel.png)
+![Conversion Funnel](Images/Conversion Funnel.png)
 
 ---
 
@@ -129,7 +129,7 @@ The funnel tracks users from their first website visit through to a completed pu
 
 **Key Finding:** Organic Search generates the second-highest revenue with virtually zero advertising spend — making it the most cost-efficient channel by a significant margin. Facebook Ads has the highest spend but does not lead in revenue, suggesting budget inefficiency.
 
-![Channel Comparison](assets/Channel_Comparision.png)
+![Channel Comparison](Images/Channel Comparision.png)
 
 ---
 
@@ -152,7 +152,7 @@ All 11 campaigns currently show a negative ROI, meaning total spend exceeds reve
 
 **Key Finding:** Generic Search is the best-performing campaign despite not being the highest spender. Winter Sale is the worst — it carries the highest spend of all campaigns and produces the weakest ROI.
 
-![ROI Scatter Plot](assets/ROI_Scatter_Plot.png)
+![ROI Scatter Plot](Images/ROI Scatter Plot.png)
 
 ---
 
@@ -189,7 +189,7 @@ The project uses a **Star Schema** — the industry standard for Business Intell
 | `fact_last_click_attribution` | Derived Fact | Pre-calculated last-click attribution result table |
 | `Funnel_Stages` | Dimension | Stage labels and ordering for the conversion funnel visual |
 
-![Data Model](assets/Data_Model.png)
+![Data Model](Images/Data Model.png)
 
 ---
 
@@ -329,16 +329,24 @@ Multi-Touch-Marketing-Attribution-ROI-Dashboard/
 │   ├── 04_ROAS.sql
 │   └── 05_First_click_Attribution.sql
 │
-├── Data/
-│   ├── Cleaned_ad_spend.csv
-│   ├── Cleaned_Conversions.csv
-│   ├── Cleaned_customer.csv
-│   └── Cleaned_touchpoints.csv
+├── Dataset/
+│   └──Cleaned Data
+│      └──Cleaned_ad_spend.csv
+│      └──Cleaned_Conversions.csv
+│      └──Cleaned_customer.csv
+│      └──Cleaned_touchpoints.csv
+│      └──Last_click_Attribution.csv
+│   └──Raw Data
+│      └──ad_spend.csv.xls
+│      └──conversions.csv.xls
+│      └──dim_customer.csv.xls
+│      └──user_touchpoints.csv.xls
 │
-├── Dashboard/
+├── PowerBI/
 │   └── Marketing_Attribution.pbix
+│   └── Marketing_Attribution.pdf
 │
-├── assets/
+├── Images/
 │   ├── KPI_s.png
 │   ├── Conversion_Funnel.png
 │   ├── Channel_Comparision.png
@@ -383,43 +391,34 @@ Finally, open `Dashboard/Marketing_Attribution.pbix` in Power BI Desktop and ref
 
 ## 👥 Team
 
-This project was built collaboratively by a team of 4.
+This project was built collaboratively by a team of 3.
 
 ---
 
 **Member 1**
 
-> 📛 Name: *(Add Name)*
-> 💼 LinkedIn: *(Add LinkedIn URL)*
-> 🐙 GitHub: *(Add GitHub URL)*
-> 📧 Email: *(Add Email)*
+> 📛 Name: *Anil Kumar Pyarasani*
+> 💼 LinkedIn: *https://www.linkedin.com/in/pyarasani-anil-kumar/*
+> 🐙 GitHub: *https://github.com/Anilqumr/*
+> 📧 Email: *Anilqumr@gmail.com*
 
 ---
 
 **Member 2**
 
-> 📛 Name: *(Add Name)*
-> 💼 LinkedIn: *(Add LinkedIn URL)*
-> 🐙 GitHub: *(Add GitHub URL)*
-> 📧 Email: *(Add Email)*
+> 📛 Name: *Nneka Akanno*
+> 💼 LinkedIn: *https://www.linkedin.com/in/nneka-akanno/*
+> 🐙 GitHub: *https://github.com/MarySabestine*
+> 📧 Email: *akannomary@gmail.com*
 
 ---
 
 **Member 3**
 
-> 📛 Name: *(Add Name)*
-> 💼 LinkedIn: *(Add LinkedIn URL)*
-> 🐙 GitHub: *(Add GitHub URL)*
-> 📧 Email: *(Add Email)*
-
----
-
-**Member 4**
-
-> 📛 Name: *(Add Name)*
-> 💼 LinkedIn: *(Add LinkedIn URL)*
-> 🐙 GitHub: *(Add GitHub URL)*
-> 📧 Email: *(Add Email)*
+> 📛 Name: *Anshuman Satpute*
+> 💼 LinkedIn: *https://www.linkedin.com/in/anshuman-satpute-0ab978313*
+> 🐙 GitHub: *https://github.com/02Anshuman*
+> 📧 Email: *anshumansatpute2002@gmail.com*
 
 ---
 
