@@ -103,7 +103,7 @@ The funnel tracks users from their first website visit through to a completed pu
 
 **Key Finding:** The funnel is nearly lossless through the top three stages — almost every visitor views a product and signs up. However, there is an **80.4% drop-off at the final conversion stage** (Signup → Purchase). This is where the business is losing customers, and it points to a checkout, pricing, or trust issue rather than a traffic or awareness problem.
 
-![Conversion Funnel](Images/Conversion Funnel.png)
+![Conversion Funnel](Images/Conversion_Funnel.png)
 
 ---
 
@@ -129,7 +129,7 @@ The funnel tracks users from their first website visit through to a completed pu
 
 **Key Finding:** Organic Search generates the second-highest revenue with virtually zero advertising spend — making it the most cost-efficient channel by a significant margin. Facebook Ads has the highest spend but does not lead in revenue, suggesting budget inefficiency.
 
-![Channel Comparison](Images/Channel Comparision.png)
+![Channel Comparison](Images/Channel_Comparision.png)
 
 ---
 
@@ -152,7 +152,7 @@ All 11 campaigns currently show a negative ROI, meaning total spend exceeds reve
 
 **Key Finding:** Generic Search is the best-performing campaign despite not being the highest spender. Winter Sale is the worst — it carries the highest spend of all campaigns and produces the weakest ROI.
 
-![ROI Scatter Plot](Images/ROI Scatter Plot.png)
+![ROI Scatter Plot](Images/ROI_Scatter_Plot.png)
 
 ---
 
@@ -189,7 +189,7 @@ The project uses a **Star Schema** — the industry standard for Business Intell
 | `fact_last_click_attribution` | Derived Fact | Pre-calculated last-click attribution result table |
 | `Funnel_Stages` | Dimension | Stage labels and ordering for the conversion funnel visual |
 
-![Data Model](Images/Data Model.png)
+![Data Model](Images/Data_Model.png)
 
 ---
 
@@ -420,6 +420,12 @@ This project was built collaboratively by a team of 3.
 > 🐙 GitHub: *https://github.com/02Anshuman*
 > 📧 Email: *anshumansatpute2002@gmail.com*
 
+---
+Member | Professional Profiles |
+| :--- | :--- |
+| **Anil Kumar Pyarasani** | [💼 LinkedIn](https://www.linkedin.com/in/pyarasani-anil-kumar/) \| [🐙 GitHub](https://github.com/Anilqumr/) \| [✉️ Email](mailto:Anilqumr@gmail.com) |
+| **Nneka Akanno** | [💼 LinkedIn](https://www.linkedin.com/in/nneka-akanno/) \| [🐙 GitHub](https://github.com/MarySabestine) \| [✉️ Email](mailto:akannomary@gmail.com) |
+| **Anshuman Satpute** | [💼 LinkedIn](https://www.linkedin.com/in/anshuman-satpute-0ab978313) \| [🐙 GitHub](https://github.com/02Anshuman) \| [✉️ Email](mailto:anshumansatpute2002@gmail.com) |
 ---
 
 ⭐ *If you found this project useful or insightful, consider giving it a star on GitHub!*
