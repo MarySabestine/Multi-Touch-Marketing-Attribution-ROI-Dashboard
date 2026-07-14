@@ -1,8 +1,10 @@
+-- Selected the Database.
 USE marketing_attribution;
 
+--Deletes the table if previously existed.
 DROP TABLE IF EXISTS customers;
 
--- Recreate the structure to account for your date and flag fields
+-- Creating the table structure. 
 CREATE TABLE customers (
     user_id VARCHAR(50) PRIMARY KEY,
     region VARCHAR(100),
@@ -17,7 +19,7 @@ CREATE TABLE customers (
     acquisition_campaign VARCHAR(150)
 );
 
-
+-- Loading the Data from the local computer to MySql Workbench to load the csv data into Table.
 LOAD DATA LOCAL INFILE 'W:/Anil/Infotact Solutions/Project Files/Cleaned/Cleaned_customer.csv'
 INTO TABLE customers
 FIELDS TERMINATED BY ',' 

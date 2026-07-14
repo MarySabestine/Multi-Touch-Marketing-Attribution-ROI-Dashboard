@@ -1,3 +1,5 @@
+-- Total Advertistment Expenditure grouped by Channel,Campaign.
+
 SELECT
     channel,
     campaign,

@@ -1,3 +1,5 @@
+--  This Sql Query uses CTE and Joins to display Cost per Click (CPC).
+
 WITH spend_by_channel AS
 (
     SELECT

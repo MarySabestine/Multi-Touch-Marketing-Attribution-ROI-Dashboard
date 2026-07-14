@@ -1,3 +1,5 @@
+--  This Sql Query uses CTE, Joins to display Customer Acquisition Cost(CAC).
+
 WITH total_spend AS
 (
     SELECT SUM(spend) AS total_spend
@@ -8,6 +10,7 @@ acquired_customers AS
     SELECT COUNT(DISTINCT user_id) AS total_customers
     FROM conversions
 )
+
 
 SELECT
     total_spend,

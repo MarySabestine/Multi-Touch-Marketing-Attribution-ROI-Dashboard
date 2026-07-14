@@ -1,18 +1,18 @@
-#Create a new table with column names
+-- Create a new table with a clear Structure of the table.
 CREATE TABLE conversions (
     user_id VARCHAR(25),
     conversion_date DATETIME,
     revenue DECIMAL(10 , 2 )
 );
  
-  #Viewing all data values in table
+-- Viewing all data values in table
 select * from conversions;
  
- #Checking datatypes
+ -- Checking datatypes
  DESCRIBE conversions;
  
-  # Ranking based on first converion date to latest converion datee
- #Used Window Function
+-- Ranking based on first converion date to latest converion datee
+-- Used Window Function
  SELECT
     user_id,
     conversion_date,
@@ -23,8 +23,8 @@ select * from conversions;
 FROM conversions;
 
 
-#Ranking based on revenue value(High to Low)
-#Used Window Function
+-- Ranking based on revenue value(High to Low)
+-- Used Window Function
 SELECT
     user_id,
     revenue,
@@ -33,8 +33,8 @@ SELECT
     ) AS revenue_rank
 FROM conversions;
 
-#Calculating total Revenue and order by date desc
-#Used Window Function
+-- Calculating total Revenue and order by date desc
+-- Used Window Function
 SELECT
     user_id,
     conversion_date,
