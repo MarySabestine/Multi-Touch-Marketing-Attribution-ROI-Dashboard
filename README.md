@@ -395,45 +395,6 @@ This project was built collaboratively by a team of 3.
 
 ---
 
-**Member 1**
-
-> 📛 Name: *Anil Kumar Pyarasani*
-> 💼 LinkedIn: *https://www.linkedin.com/in/pyarasani-anil-kumar/*
-> 🐙 GitHub: *https://github.com/Anilqumr/*
-> 📧 Email: *Anilqumr@gmail.com*
-
----
-
-**Member 2**
-
-> 📛 Name: *Nneka Akanno*
-> 💼 LinkedIn: *https://www.linkedin.com/in/nneka-akanno/*
-> 🐙 GitHub: *https://github.com/MarySabestine*
-> 📧 Email: *akannomary@gmail.com*
-
----
-
-**Member 3**
-
-> 📛 Name: *Anshuman Satpute*
-> 💼 LinkedIn: *https://www.linkedin.com/in/anshuman-satpute-0ab978313*
-> 🐙 GitHub: *https://github.com/02Anshuman*
-> 📧 Email: *anshumansatpute2002@gmail.com*
-
----
-Member | Professional Profiles |
-| :--- | :--- |
-| **Anil Kumar Pyarasani** | [💼 LinkedIn](https://www.linkedin.com/in/pyarasani-anil-kumar/) \| [🐙 GitHub](https://github.com/Anilqumr/) \| [✉️ Email](mailto:Anilqumr@gmail.com) |
-| **Nneka Akanno** | [💼 LinkedIn](https://www.linkedin.com/in/nneka-akanno/) \| [🐙 GitHub](https://github.com/MarySabestine) \| [✉️ Email](mailto:akannomary@gmail.com) |
-| **Anshuman Satpute** | [💼 LinkedIn](https://www.linkedin.com/in/anshuman-satpute-0ab978313) \| [🐙 GitHub](https://github.com/02Anshuman) \| [✉️ Email](mailto:anshumansatpute2002@gmail.com) |
----
-
-## 👥 Team
-
-This project was built collaboratively by a team of 3.
-
----
-
 **Member 1:** Anil Kumar Pyarasani
 [💼 LinkedIn](https://www.linkedin.com/in/pyarasani-anil-kumar/) | [🐙 GitHub](https://github.com/Anilqumr/) | [✉️ Email](mailto:Anilqumr@gmail.com)
 
@@ -449,7 +410,4 @@ This project was built collaboratively by a team of 3.
 
 ---
 
-⭐ *If you found this project useful or insightful, consider giving it a star on GitHub!*
-
----
 ⭐ *If you found this project useful or insightful, consider giving it a star on GitHub!*
