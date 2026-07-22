@@ -21,7 +21,7 @@ WITH attribution_base AS
 
     FROM touchpoints tp
 
-    LEFT JOIN conversions conv
+    Inner JOIN conversions conv
            ON tp.user_id=conv.user_id
 )
 
