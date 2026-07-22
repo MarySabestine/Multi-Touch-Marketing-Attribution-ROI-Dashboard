@@ -6,6 +6,8 @@
 -- this model operates on the assumption that every digital touchpoint contributed equally 
 -- to the ultimate conversion.
 
+Create table Linear_Attribution_table as
+
 WITH attribution_base AS
 (
     SELECT
